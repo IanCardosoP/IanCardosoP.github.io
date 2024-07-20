@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="es" />
+    <meta name="description"
+        content="Tarimas de plástico diseñadas para transporte y almacenamiento seguro. Livianas, resistentes y rentables">
+    <title>Tarimas de Plástico Indplast</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/src/images/Icono-Indplast-Bco.png" type="image/png">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.toggle-button');
+            const answers = document.querySelectorAll('.answer');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const answer = button.nextElementSibling;
+
+                    // Si la respuesta ya está visible, la oculta
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        // Oculta todas las respuestas
+                        answers.forEach(answer => answer.style.display = 'none');
+
+                        // Muestra la respuesta correspondiente al botón clicado
+                        answer.style.display = 'block';
+                        
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="/src/images/logo2.png" alt="logo">
+        <div class="headerlinks">
+            <ul class="ul-links">
+                <li class="contacto">Contacto</li>
+                <li>Comprar Ahora</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Headline -->
+    <div class="HeadBlock">
+        <div class="Headline">
+            <h1>La mejor solución en tarimas de plástico.</h1>
+            <p>Tanto para almacenamiento como para exportación, las tarimas de plástico
+                de Indplast son fáciles de manejar y
+                transportar.</p>
+            <button class="btn-saberMas" >Saber más</button>
+            <span class="actionText" id="actionText"> Contactar a ventas ></span>
+        </div>
+        <div class="HeadlineIMG">
+            <img src="/src/images/Tar2.jpg" alt="Tarima de plástico Indplast">
+        </div>
+    </div>
+
+    <!-- Quick Features -->
+    <div class="qFeatures">
+        <span class="qFeaturesElement">
+            <img src="/src/images/estibables1_round.png"><br>
+            <strong>Estibables</strong><br>Optimizan el espacio de almacenamiento mediante apilamiento.
+        </span>
+        <span class="qFeaturesElement">
+            <img src="/src/images/ligero_round.png"><br>
+            <strong>Peso Ligero</strong><br>Cada tarima pesa solo 7 kg, lo que facilita su manejo.
+        </span>
+        <span class="qFeaturesElement">
+            <img src="/src/images/exportar_round.png"><br>
+            <strong>Ideales para Exportación</strong><br>No
+            está sujeta a cumplir con las normas NIMF-15 y EN 13698-1.
+        </span>
+    </div>
+
+    <!-- Promo Banner -->
+
+    <div class="promoBanner">
+        <div class="promoBannerText">
+            <p class="headerh1">POR TIEMPO LIMITADO</p>
+            <p class="price">$2,090</p>
+            <p class="description">PAQUETE DE 5 PIEZAS, IVA INCLUIDO</p>
+            <a href="#" class="shop-now">COMPRAR</a>
+        </div>
+        <div class="promoBannerImg">
+            <img src="/src/images/Promo_IMG.jpg" alt="Promocion Por Tiempo Limitado!">
+        </div>
+    </div>
+
+    <!-- Features Sections -->
+    <div class="featuresSection" id="saber">
+        <div class="featureSectionElement">
+            <div class="featureSectionImage">
+                <img src="/src/images/tarimas_estandar.webp" alt="Tarimas Estándar">
+            </div>
+            <div class="featureSectionElementText">
+                <h2>Tarimas Estándar</h2>
+                <p>Nuestras tarimas de plástico están diseñadas para garantizar un transporte y almacenamiento seguro y
+                    eficiente de productos. Son altamente productivas, ligeras, resistentes y rentables, ofreciendo un
+                    rendimiento superior comparado con las tarimas de madera.</p>
+            </div>
+        </div>
+        <div class="featureSectionElement">
+            <div class="featureSectionImage">
+                <img src="/src/images/estibables.jpg" alt="Tarimas Estibables">
+            </div>
+            <div class="featureSectionElementText">
+                <h2>Estibables y Livianas</h2>
+                <p>Diseñadas para optimizar el espacio de almacenamiento mediante la capacidad de apilamiento. Cada una
+                    de
+                    estas tarimas tiene un peso de 7 kg, lo que las hace livianas y manejables. Son ideales para
+                    organizar y
+                    maximizar el uso del espacio en almacenes, bodegas u otros entornos donde se requiera almacenamiento
+                    eficiente y manejo sencillo.</p>
+            </div>
+
+            
+        </div>
+        <div class="featureSectionElement">
+            <div class="featureSectionImage">
+                <img src="/src/images/exportacion.jpg" alt="Tarimas Estándar">
+            </div>
+            <div class="featureSectionElementText">
+                <h2>Ideales para exportación</h2>
+                <p>La tarima de plástico ligeras es ideal para la exportación internacional. A diferencia de las tarimas
+                    de
+                    madera, no están sujetas a cumplir con las normas NIMF-15 ni con la norma EN 13698-1. Esto
+                    simplifica
+                    los procesos de exportación y facilita el transporte de mercancías de un país a otro sin
+                    restricciones
+                    relacionadas con tratamientos fitosanitarios o regulaciones específicas para la madera</p>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div class="featureSectionEnviroment">
+        <video autoplay muted loop class="background-video">
+            <source src="src/images/sustentabilidad.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="featureSectionEnviromentText">
+            <h2>Comprometidos con la Sustentabilidad</h2>
+            <p>En Indplast adoptamos un enfoque sostenible, utilizando polipropileno reciclado Post- Industrial para
+                la fabricación de nuestras tarimas, lo que las convierte en una opción ecológica y eficiente.</p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+        <h1>Preguntas Frecuentes (FAQ)</h1>
+        <ul class="faq-list">
+            <li><hr>
+                <button class="toggle-button">> ¿Por qué debería elegir las tarimas de plástico de Indplast en lugar de
+                    las tarimas de madera?</button>
+                    
+                <div class="answer">
+                    <p>Las tarimas de plástico de Indplast ofrecen ventajas significativas sobre las tarimas de madera.
+                        Son más ligeras, resistentes y rentables, proporcionando un rendimiento superior en términos de
+                        durabilidad y eficiencia de almacenamiento. Son ideales para el uso en interiores y exteriores y
+                        están diseñadas para un transporte y almacenamiento confiable y estable. </p>
+                </div>
+                <hr></li>
+            <li>
+                <button class="toggle-button">> ¿Cómo me beneficia usar tarimas de plástico de Indplast?</button>
+                
+                <div class="answer">
+                    <p>Las tarimas de plástico de Indplast son ideales para optimizar el almacenamiento en almacenes,
+                        bodegas y otros entornos logísticos. Puedes utilizarlas para organizar productos de manera
+                        eficiente, facilitar el acceso a mercancías y maximizar el uso del espacio disponible. Su diseño
+                        estibable y peso ligero y resistencia las hace especialmente adecuadas para mejorar la
+                        eficiencia operativa en
+                        cualquier instalación de almacenamiento.</p>
+                </div>
+            </li>
+            <li><hr>
+                <button class="toggle-button">>  ¿Son las tarimas de plástico de Indplast adecuadas para exportación
+                    internacional?</button>
+                
+                <div class="answer">
+                    <p>Sí, nuestras tarimas de plástico son ideales para exportación debido a su diseño ligero y al uso
+                        de polipropileno reciclado. No están sujetas a las normas NIMF-15 y EN 13698-1, simplificando
+                        los procesos de exportación.</p>
+                </div>
+            </li>
+            <li><hr>
+                <button class="toggle-button">> ¿Cuál es el peso y medidas de las tarimas de plástico de
+                    Indplast?</button>
+                    
+                <div class="answer">
+                    <p>Cada tarima de pástico estandar pesa solo 7 kg, y mide 100 cm x 120 xm (39x47") lo que las hace
+                        fáciles de manejar y transportar, optimizando la
+                        eficiencia operativa en entornos de almacenamiento y logística.</p>
+                </div>
+            </li>
+            <li><hr>
+                <button class="toggle-button">> ¿Ofrecen descuentos o precios especiales para compras al mayoreo de
+                    tarimas de plástico?</button>
+                    
+                <div class="answer">
+                    <p>Sí, en Indplast ofrecemos precios competitivos y descuentos atractivos para compras al mayoreo de
+                        nuestras tarimas de plástico. Para obtener más información sobre nuestras opciones para ventas
+                        al mayoreo, te recomendamos que contactes directamente con nuestro equipo de ventas.</p>
+                </div><hr>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- Last call to action -->
+    <div class="lastCallToAction" id="contacto">
+
+        <h2>¿Tienes alguna pregunta o quieres solicitar una cotización personalizada?, <br> ¡Contáctanos ahora!</h2>
+
+        <div class="contactInfo" id="contactInfo">
+
+            <p><span>Topacio #17 <br> Col. Centro, CDMX, 06090</span></p>
+            <p><span>55 5220 8726 <br> ventas@indplast.com</span></p>
+        </div>
+
+        <div class="contactForm">
+            <form action="mailto:ventas@indplast.com" method="post" enctype="text/plain">
+
+                <p><label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                    <label for="nombre">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido"><br>
+
+                    <label for="email">Email*:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p><label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </p>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+    </div>
+
+    <!-- Map -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.69781991979!2d-99.130836587538!3d19.425458040830044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fec92541c2fd%3A0x68d5db8aa387feaa!2sC.%20Topacio%2017%2C%20La%20Merced%2C%20Centro%2C%20Cuauht%C3%A9moc%2C%2006090%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1721071146235!5m2!1ses-419!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer"><p> 2024 <img class="git" src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg"><a href="https://github.com/IanCardosoP"> IanCardosoP</a></p></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-saberMas').addEventListener('click', function() {
+                document.getElementById('saber').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.contacto').addEventListener('click', function() {
+                document.getElementById('contactInfo').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.actionText').addEventListener('click', function() {
+                document.getElementById('contactInfo').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>

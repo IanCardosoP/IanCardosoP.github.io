@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    0%,
+    50% {
+        transform: translateX(-4px);
+    }
+
+    25%,
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 4rem;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, .contacto:hover, .actionText:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* header container */
+.header {
+    width: auto;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.header img {
+    max-width: auto;
+    min-height: 100%;
+    max-width: auto;
+    max-height: 100%;
+}
+
+/* Lista de links */
+.headerlinks {
+    margin-left: auto;
+}
+
+.ul-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.ul-links li {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Botón Último Comprar Ahora */
+.ul-links li:last-child {
+    font-weight: 600;
+    display: inline-block;
+    border: 3px solid #099e66;
+    border-radius: 20px 0px 20px 0px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.ul-links li:last-child:hover {
+    background-color: #099e66;
+    border-color: #099e66;
+    color: #ffffff;
+    animation: shake 1s;
+}
+
+/* HeadLine  */
+.Headline{
+    margin-bottom: 4rem;
+}
+.Headline h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 0;
+
+}
+
+/* Sub headline */
+.Headline p {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.actionText {
+    font-size: 1.3rem;
+    font-weight: 150;
+    padding-left: 1rem;
+}
+
+.btn-saberMas, .contactForm input[type="submit"] {
+    padding: 15px 45px;
+    background-color: #099e66;
+    border: 0px solid #099e66;
+    border-radius: 0px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    box-shadow: 9px 7px 44px -9px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 9px 7px 44px -9px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 9px 7px 44px -9px rgba(0, 0, 0, 0.63);
+    transition: transform 0.2s;
+}
+
+/* Imagen Principal */
+.HeadlineIMG {
+    padding-top: 3rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HeadlineIMG img {
+    max-width: 100%;
+    /* Ajusta el ancho máximo al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción original */
+    margin: auto;
+}
+
+
+/* Quick Features */
+.qFeatures {
+    
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    font-weight: 200;
+    font-size: 1.7rem;
+}
+
+.qFeaturesElement {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    margin: 4px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    font-size: 1.4rem;
+
+}
+
+.qFeaturesElement strong {
+    font-weight: 500;
+}
+
+.qFeaturesElement:hover,
+.btn-saberMas:hover {
+    transform: scale(1.1);
+}
+
+.qFeaturesElement strong {
+    font-weight: 500;
+}
+
+.qFeaturesElement img {
+    width: 150px;
+    /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    border-radius: 20%;
+    aspect-ratio: 1;
+    /* Mantiene la proporción original */
+    object-fit: scale-down;
+    border: 2px solid #099e66;
+}
+
+
+/* Promocion Banner */
+.promoBanner {
+    margin-top: 3rem;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    color: #fff;
+    height:min-content;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.promoBannerText {
+    max-width: 100%;
+    max-height: 100%;
+    flex: 2;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.headerh1 {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.price {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+.description {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    font-size: 1.7rem;
+    font-weight: 200;
+
+}
+
+.shop-now {
+    position: relative;
+    margin: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+.promoBannerImg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+
+}
+
+.promoBannerImg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/*  Features Sections */
+.featuresSection {
+    margin-top: 4rem;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.featureSectionElement {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 9px 20px 85px -31px rgba(0, 0, 0, 0.91);
+    -webkit-box-shadow: 9px 20px 85px -31px rgba(0, 0, 0, 0.91);
+    -moz-box-shadow: 9px 20px 85px -31px rgba(0, 0, 0, 0.91);
+    min-width:100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+}
+
+.featureSectionImage img {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.featureSectionElement:first-child {
+    margin-top: 0;
+}
+
+.featuresSection h2, .featureSectionEnviroment h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+
+}
+
+.featureSectionElement p, .featureSectionEnviroment p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+/* video */
+
+.featureSectionEnviroment {
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.featureSectionEnviromentText {
+    position: relative;
+    z-index: 1;
+    color: white;
+    /* Asegúrate de que el texto sea legible */
+    background-color: #000000;
+    margin: 3rem;
+    width: 40%;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 15px;
+    text-align: left;
+    font-weight: 100;
+    box-shadow: 40px 43px 110px 21px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 40px 43px 110px 21px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 40px 43px 110px 21px rgba(0, 0, 0, 0.57);
+}
+
+.featureSectionEnviromentText h2 {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+/* faq */
+.faq {
+    padding-top: 4rem;
+    
+}
+
+.faq h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+    display: none;
+
+}
+
+.faq-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.answer {
+    display: none;
+
+}
+
+.answer p {
+    font-size: 1.7rem;
+    font-weight: 200;
+    padding: 0rem 2rem;
+}
+
+
+.toggle-button {
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color:#f4f4f4;
+    
+}
+
+.lastCallToAction h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* contact */
+
+.contactInfo {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contactInfo p {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contactInfo span {
+    display: block;
+    font-weight: bold;
+    color: #099e66;
+}
+
+.contactInfo p:last-child {
+    margin-bottom: 0;
+}
+
+/* form */
+.contactForm {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm p {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contactForm label {
+    margin-bottom: 5px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    
+}
+
+
+
+.contactForm input[type="submit"]:hover {
+    background-color: #116142;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    font-size: small;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+    text-align: center; 
+}
+
+.git {
+    width: 13px;
+    height: auto;
+}
+/* End Generals */
+
+/* Mid - Tablets */
+@media (min-width: 481px) and (max-width: 900px) {
+    body {
+        
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column; 
+        /* align-items: center;  */
+        justify-content: center; 
+        min-height: 100vh; 
+    }
+    .featureSectionElement {
+        flex-direction: column;
+    }
+
+    .featureSectionImage {
+        order: -1; /* Pone la imagen antes del texto */
+    }
+
+    .featureSectionElementText {
+        text-align: center;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    body {
+        max-width: 80%;
+        
+    }
+  }
+  @media (min-width: 2000px) {
+    body {
+        max-width: 60%;
+        
+    }
+  }
+
+/* Mid-High - Laptops*/
+@media (min-width: 1500px) {
+    body {
+        width: 90%;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        min-height: 100vh; 
+    }
+    .HeadBlock {
+        display: flex;
+        justify-content: space-between; /* Espacia los elementos entre sí */
+        align-items: center; /* Alinea los elementos verticalmente */
+        padding: 1rem; /* Espaciado interno opcional */
+    }
+    
+    .Headline {
+        flex: 1; /* Ocupa el espacio disponible */
+        text-align: left; /* Alinea el texto a la izquierda */
+        padding-right: 1rem; /* Espaciado a la derecha opcional */
+    }
+    
+    .HeadlineIMG {
+        flex: 1; /* Ocupa el espacio disponible */
+        display: flex;
+        justify-content: flex-end; /* Alinea la imagen a la derecha */
+    }
+    
+    .HeadlineIMG img {
+        max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+    
+    
+  }
+
+  @media (min-width: 481) and (max-width: 768px) {
+    .featureSectionImage img {
+        max-width: 200px;
+    }
+  }
