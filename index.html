@@ -235,7 +235,7 @@
         </div>
 
         <div class="contactForm">
-            <form id="contactForm" method="post" enctype="text/plain">
+            <form id="contactForm" method="post" enctype="application/x-www-form-urlencoded">
 
                 <p><label for="nombre">Nombre:</label><br>
                     <input type="text" id="nombre" name="nombre" required><br>
@@ -257,7 +257,7 @@
                 function sendEmail() {
                     const form = document.getElementById('contactForm');
                     const formData = new FormData(form);
-                
+        
                     fetch('serve.php', {
                         method: 'POST',
                         body: formData
@@ -266,7 +266,7 @@
                     .then(data => alert(data))
                     .catch(error => console.error('Error:', error));
                 }
-                </script>
+            </script>
         </div>
 
 
