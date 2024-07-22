@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" lang="es" />
-    <meta name="description"
+    <meta charset="utf-8">
+    <meta name="Tarimas de Plástico de Indplast"
         content="Tarimas de plástico diseñadas para transporte y almacenamiento seguro. Livianas, resistentes y rentables">
     <title>Tarimas de Plástico Indplast</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -235,7 +235,7 @@
         </div>
 
         <div class="contactForm">
-            <form action="mailto:ventas@indplast.com" method="post" enctype="text/plain">
+            <form id="contactForm" method="post" enctype="text/plain">
 
                 <p><label for="nombre">Nombre:</label><br>
                     <input type="text" id="nombre" name="nombre" required><br>
@@ -253,6 +253,20 @@
 
                 <input type="submit" value="Enviar">
             </form>
+            <script>
+                function sendEmail() {
+                    const form = document.getElementById('contactForm');
+                    const formData = new FormData(form);
+                
+                    fetch('serve.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => alert(data))
+                    .catch(error => console.error('Error:', error));
+                }
+                </script>
         </div>
 
 
