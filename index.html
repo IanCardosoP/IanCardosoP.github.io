@@ -276,23 +276,20 @@
     </div>
 
     <div class="footer">
-        <p> 2024 </p><img class="git" src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg"><a
-                href="https://github.com/IanCardosoP"><p> IanCardosoP</a></p>
+        <p> 2024 </p>
+        <img class="git" src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg">
+        <p><a href="https://github.com/IanCardosoP">IanCardosoP</a></p>
     </div>
+
+    <!-- Soft Navigation -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('.btn-saberMas').addEventListener('click', function () {
-                document.getElementById('saber').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('.contacto').addEventListener('click', function () {
-                document.getElementById('contactInfo').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('.actionText').addEventListener('click', function () {
-                document.getElementById('contactInfo').scrollIntoView({ behavior: 'smooth' });
+            document.addEventListener('click', function (event) {
+                if (event.target.matches('.btn-saberMas')) {
+                    document.getElementById('saber').scrollIntoView({ behavior: 'smooth' });
+                } else if (event.target.matches('.contacto, .actionText')) {
+                    document.getElementById('contactInfo').scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
     </script>
