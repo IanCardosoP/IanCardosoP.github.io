@@ -151,7 +151,7 @@
 
     <div class="featureSectionEnviroment">
         <video autoplay muted loop class="background-video">
-            <source src="src/images/sustentabilidad.mp4" type="video/mp4">
+            <source src="sustentabilidad2.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
         <div class="featureSectionEnviromentText">
@@ -231,7 +231,7 @@
         <div class="contactInfo" id="contactInfo">
 
             <p><span>Topacio #17 <br> Col. Centro, CDMX, 06090</span></p>
-            <p><span>55 5220 8726 <br> ventas@indplast.com</span></p>
+            <p><span><a href="tel:+525552208726">55 5220 8726</a> <br> cardoso@indplast.com</span></p>
         </div>
 
         <div class="contactForm">
@@ -253,20 +253,6 @@
 
                 <input type="submit" value="Enviar">
             </form>
-            <script>
-                function sendEmail() {
-                    const form = document.getElementById('contactForm');
-                    const formData = new FormData(form);
-        
-                    fetch('serve.php', {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => response.text())
-                    .then(data => alert(data))
-                    .catch(error => console.error('Error:', error));
-                }
-            </script>
         </div>
 
 
