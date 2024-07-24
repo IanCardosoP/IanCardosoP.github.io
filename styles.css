@@ -539,19 +539,16 @@ a:hover, .contacto:hover, .actionText:hover {
     justify-content: center;
 }
 
-.footer{
+.footer {
     font-size: small;
     text-align: center;
     margin-top: 2rem;
-    display: flex;
-    flex-direction: column; 
+    display: inline-flex;
     align-items: center; 
     justify-content: center; 
-    height: 100%; 
-    text-align: center; 
 }
 
-.git {
+.footer img {
     width: 13px;
     height: auto;
 }
